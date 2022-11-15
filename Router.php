@@ -1,7 +1,7 @@
 <?php
-namespace app\core;
+namespace mh3yad\phpmvc;
 
-use app\core\exception\NotFoundException;
+use mh3yad\phpmvc\exception\NotFoundException;
 
 class Router
 {
