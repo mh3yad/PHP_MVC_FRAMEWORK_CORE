@@ -1,6 +1,6 @@
 <?php
 
-namespace mh3yad\phpmvc\exception;
+namespace app\core\exception;
 
 class NotFoundException extends \Exception
 {

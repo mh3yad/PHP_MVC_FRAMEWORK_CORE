@@ -1,9 +1,8 @@
 {
     "name": "mh3yad/php-mvc-framework",
-    "description": "mini mvc framework",
     "autoload": {
         "psr-4": {
-            "mh3yad\\phpmvc\\": "."
+            "mh3yad\\phpmcv\\": "."
         }
     },
     "authors": [

@@ -1,6 +1,6 @@
 <?php
 
-namespace mh3yad\phpmvc;
+namespace app\core;
 
 abstract class Model
 {
@@ -66,9 +66,7 @@ abstract class Model
     }
     abstract public function rules():array;
     abstract public function labels():array;
-    public function getLabels(string $attr){
-        return $this->labels()[$attr];
-    }
+    abstract public function getLabels(string $attr):string;
 
     public function addError($attributeName,$message): void
     {

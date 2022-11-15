@@ -1,8 +1,8 @@
 <?php
 
-namespace mh3yad\phpmvc;
+namespace app\core;
 
-use mh3yad\phpmvc\middlewares\BaseMiddleware;
+use app\core\middlewares\BaseMiddleware;
 
 class Controller
 {
@@ -27,7 +27,7 @@ class Controller
     }
     public function render($view,$params=[]): string
     {
-        return Application::$app->view->renderView($view,$params);
+        return Application::$app->router->renderView($view,$params);
     }
 
     public function registerMiddleware(BaseMiddleware $baseMiddleware){

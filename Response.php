@@ -1,6 +1,6 @@
 <?php
 
-namespace mh3yad\phpmvc;
+namespace app\core;
 
 class Response
 {

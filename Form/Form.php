@@ -1,8 +1,8 @@
 <?php
 
-namespace mh3yad\phpmvc\Form;
+namespace app\core\Form;
 
-use mh3yad\phpmvc\Model;
+use app\core\Model;
 
 class Form
 {
@@ -10,8 +10,8 @@ class Form
         echo sprintf("<form  class='g-3 needs-validation'  method='%s' action='%s' novalidate>",$method,$action);
         return new Form();
     }
-    public function field(Model $model,$attribute):InputField{
-        return new InputField($model,$attribute);
+    public function field(Model $model,$attribute):Field{
+        return new Field($model,$attribute);
     }
     public static function end(){
         echo "</form>";

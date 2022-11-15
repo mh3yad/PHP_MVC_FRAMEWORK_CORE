@@ -1,9 +1,9 @@
 <?php
 
-namespace mh3yad\phpmvc;
-use mh3yad\phpmvc\Controller;
-use mh3yad\phpmvc\Router;
-use mh3yad\phpmvc\Request;
+namespace app\core;
+use app\core\Controller;
+use app\core\Router;
+use app\core\Request;
 use app\models\User;
 
 class Application{
@@ -21,7 +21,7 @@ class Application{
     public Database $db;
     public Session $session;
     public ?DBModel $user ;
-    public View $view;
+
     /**
      * @param $root_dir
      * @param $config
@@ -37,7 +37,6 @@ class Application{
         $this->router = new Router($this->request,$this->response);
         $this->db = new Database($config['db']);
         $this->session = new Session();
-        $this->view = new View();
 
         $primaryValue = $this->session->get('user');
         if($primaryValue){
@@ -55,7 +54,7 @@ class Application{
             echo  $this->router->resolve();
         }catch (\Exception $e){
             $this->response->setStatusCode($e->getCode());
-            echo Application::$app->view->renderView('_error',['e' => $e]);
+            echo Application::$app->router->renderView('_error',['e' => $e]);
         }
     }
 
