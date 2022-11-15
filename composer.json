@@ -1,0 +1,16 @@
+{
+    "name": "mh3yad/php-mvc-framework",
+    "description": "mini mvc framework",
+    "autoload": {
+        "psr-4": {
+            "Mh3yad\\PhpMvcFramework\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mohamed ayad",
+            "email": "mh3yad@gmail.com"
+        }
+    ],
+    "require": {}
+}
