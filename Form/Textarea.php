@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core\Form;
+namespace mh3yad\phpmvc\Form;
 
-use app\core\Model;
+use mh3yad\phpmvc\Model;
 
 class Textarea extends HTMLField
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace app\core;
-use app\core\Controller;
-use app\core\Router;
-use app\core\Request;
+namespace mh3yad\phpmvc;
+use mh3yad\phpmvc\Controller;
+use mh3yad\phpmvc\Router;
+use mh3yad\phpmvc\Request;
 use app\models\User;
 
 class Application{

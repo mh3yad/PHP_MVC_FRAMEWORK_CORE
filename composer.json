@@ -3,7 +3,7 @@
     "description": "mini mvc framework",
     "autoload": {
         "psr-4": {
-            "Mh3yad\\PhpMvcFramework\\": "src/"
+            "mh3yad\\phpmvc\\": "."
         }
     },
     "authors": [
